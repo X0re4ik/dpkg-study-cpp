@@ -1,0 +1,4 @@
+#!/bin/sh
+# systemctl enable pg-server
+# systemctl start pg-server
+# systemctl --system daemon-reload

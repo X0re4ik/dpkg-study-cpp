@@ -1,0 +1,5 @@
+pg-server (0.0.2-1) unstable; urgency=medium
+
+  * Initial packaging with debhelper.
+
+ -- Student Developer <student@example.com>  Sat, 14 Nov 2026 20:00:00 +0300

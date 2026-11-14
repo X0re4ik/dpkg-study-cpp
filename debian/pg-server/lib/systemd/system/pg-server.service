@@ -1,0 +1,13 @@
+[Unit]
+Description=PostgreSQL client library version HTTP server
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/pg-server --config /etc/pg-server/config.yaml
+DynamicUser=yes
+NoNewPrivileges=yes
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
