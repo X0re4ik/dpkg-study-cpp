@@ -1,8 +1,16 @@
 FROM ubuntu:22.04
 
+ENV container=docker
+
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends binutils
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+        binutils \
+        systemd \
+        systemd-sysv \
+        dbus
 
 WORKDIR /work
 
-CMD ["/bin/bash"]
+STOPSIGNAL SIGRTMIN+3
+
+CMD ["/sbin/init"]

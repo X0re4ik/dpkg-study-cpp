@@ -230,7 +230,7 @@ int main(int argc, char* argv[]) {
     if (argc != 3 ||
         std::string_view(argv[1]) != "--config") {
         std::cerr
-            << "Usage: " << argv[0]
+            << "Please usage: " << argv[0]
             << " --config <path/to/config.yaml>\n";
 
         return 2;

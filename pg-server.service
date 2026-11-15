@@ -3,11 +3,10 @@ Description=PostgreSQL version HTTP server
 
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/pg-server --config /etc/pg-server/config.yaml
+ExecStart=/usr/bin/pg-server --config /etc/pg-server/config.yaml
 
 DynamicUser=yes
 NoNewPrivileges=yes
-
 Restart=on-failure
 RestartSec=3
 

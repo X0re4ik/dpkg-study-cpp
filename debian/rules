@@ -1,9 +1,0 @@
-#!/usr/bin/make -f
-
-export DEB_BUILD_MAINT_OPTIONS = hardening=+all
-include /usr/share/dpkg/buildflags.mk
-
-%:
-	dh $@ --buildsystem=makefile
-
-override_dh_auto_install:
